@@ -7,7 +7,7 @@ $(document).keydown(function (e) {
            
             $('#photo').attr('src', data.sprites.front_default);
             for (i = 0; i < 4; i++) {
-                $('#moves').append('<li> ' + data.moves[i].move.name + ' </li>');
+                $($("li")[i]).text(data.moves[i].move.name);
             }
 
 
